@@ -5,3 +5,8 @@ _gen/
 *.hprof
 *build.lock
 content/_index.md
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/

@@ -8,7 +8,7 @@
 // @import url('reveal-js/lib/font/source-sans-pro/source-sans-pro.css');
 // @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu');
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
+// @import url('https://fonts.googleapis.com/css2?family=Signika+Negative');
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
 // Serif
@@ -23,11 +23,13 @@
 // @import url('https://fonts.googleapis.com/css2?family=Fredoka+One');
 
 // Monospace
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
+// @import url('https://fonts.googleapis.com/css2?family=Inconsolata');
+// @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
 // @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono');
 
-// $backgroundColor: #fff;
+// @import url('https://fonts.googleapis.com/css2?family=Arial');
+
+$backgroundColor: #1f1f1f;
 
 // $mainColor: #000;
 // $headingColor: #111;
@@ -50,7 +52,6 @@ $linkColor: #2690e7;
 $linkColorHover: lighten( $linkColor, 25% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 $detailBackgroundColor: #dae5e9;
-$logo: url("../example-background-neg.svg");
 
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
@@ -59,14 +60,23 @@ $heading4Size: 1.0em;
 
 @import "reveal-js/dist/theme/template/theme";
 
-section.has-light-background {
-	$detailBackgroundColor: #bd2b0b !global;
-	$logo: url("../example-background.svg") !global;
-
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #222;
-	}
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: "Montserrat";
 }
+
+.container{
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+
 .reveal pre {
 	margin: 1em auto;
 }
@@ -255,19 +265,16 @@ kbd {
 
 .reveal .slide-background {
 	background-color: $backgroundColor;
-	background-image: $logo;
 	background-repeat: no-repeat;
 	background-position: 0.45% 99.2%;
 	background-size: 15%;
 	background-clip: border-box;
-	border-radius: 30px;
-	border-style: solid;
 	border-color: $detailBackgroundColor;
 	border-width: 0.3em;
 }
 
 .reveal .slide-background:after {
-	content: "Authors - Title - Venue Year";
+	content: "Presentazione a cura di Bewolla ©";
 	position: absolute;
 	bottom: 2.5%;
 	right: 6%;
