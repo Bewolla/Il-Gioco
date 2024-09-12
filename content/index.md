@@ -1,9 +1,9 @@
 +++
 
-title = "An Architecture and Prototype for Monitoring Distributed Simulations of Distributed Systems"
-description = "DS-RT 2024"
+title = "Il Gioco"
+description = "Il Gioco"
 outputs = ["Reveal"]
-aliases = ["/conference/"]
+aliases = ["/il-gioco/"]
 
 +++
 
